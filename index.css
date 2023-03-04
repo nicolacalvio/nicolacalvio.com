@@ -1,0 +1,175 @@
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto';
+    font-style: normal;
+}
+ul {
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    /*background-color: #111;*/
+}
+.introduzione_sinistra{
+    height: 100vh;
+    float: left;
+    background: #0F1146;
+    width: 60%;
+}
+.spaziatore{
+    height: 150px;
+}
+
+.intestazione{
+    width: 869px;
+    left: 17px;
+}
+.nome{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 117px;
+    text-align: center;
+
+    color: #BC0000;
+}
+.lavoro{
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 42px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+.bottone1{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #25297E;
+    background: #D9D9D9;
+    border-radius: 20px;
+    width: 252px;
+    height: 80px;
+    left: 165px;
+    top: 552px;
+    border-width: 0;
+
+}
+.bottone2{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #FFFFFF;
+    width: 249px;
+    height: 80px;
+    left: 468px;
+    top: 552px;
+
+    background: #BC0000;
+    border-radius: 20px;
+    border-width: 0;
+}
+.bottoni{
+    text-align: center;
+}
+.introduzione_codice{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    float: left;
+    /*text-align: center;*/
+    width: 40%;
+    /*background: #1E1E1E;*/
+    background-color: #1E1E1E;
+
+}
+.codice{
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 42px;
+    overflow: hidden;
+}
+pre {
+    word-break: break-all;
+    background-color: #1E1E1E;
+    color: #D4D4D4;
+    padding: 10px;
+    overflow-x: auto;
+}
+
+.line-number {
+    color: #807676;
+    display: inline-block;
+    width: 2em;
+    user-select: none;
+}
+
+.keyword {
+    color: #C586C0;
+}
+
+.identifier {
+    color: #E9E9E8;
+}
+
+.string {
+    color: #F2858F;
+}
+
+.return{
+    color: #D72E82;
+}
+.parenthesis{
+    color: #DABF34;
+}
+
+.function{
+    color: #875AFB;
+}
+
+.comment {
+    color: #807676;
+}
+.console{
+    color: #A081F2;
+}
