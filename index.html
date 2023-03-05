@@ -12,33 +12,57 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js" integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous"></script>
 </head>
 <body>
-<div class="introduzione_sinistra">
-    <header>
-        <ul>
-            <li class="home"><a href="#"><img src="logo_header.svg" alt="logo"></a></li>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Chi sono</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contattami</a></li>
-        </ul>
+<div class="first">
+    <div class="introduzione_sinistra">
+        <header>
+            <ul>
+                <li class="home"><a href="#"><img src="logo_header.svg" alt="logo"></a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Chi sono</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contattami</a></li>
+            </ul>
 
-    </header>
+        </header>
+        <div class="spaziatore"></div>
+        <div class="intestazione">
+            <div class="nome">Nicola Calvio</div>
+            <div class="lavoro">Full stack software developer</div>
+            <div style="height: 33px;"></div>
+            <div class="bottoni">
+                <button class="bottone1">I miei lavori</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="bottone2">Contattami</button>
+            </div>
+        </div>
+
+    </div>
+    <div class="introduzione_codice">
+        <pre class="codice" id="battitura"></pre>
+    </div>
+    <div class="scroll-down">
+        <a href="#seconda_pagina"> <img src="scroll.svg" alt=""></a>
+    </div>
+</div>
+<div class="spaziatore" >&nbsp;</div>
+<div class="second" id="seconda_pagina">
+    <div class="immagine_laterale">
+        <img src="laterale.svg">
+    </div>
+    <div class="titolo" >
+        CHI SONO
+    </div>
     <div class="spaziatore"></div>
-    <div class="intestazione">
-        <div class="nome">Nicola Calvio</div>
-        <div class="lavoro">Full stack software developer</div>
-        <div style="height: 33px;"></div>
-        <div class="bottoni">
-            <button class="bottone1">I miei lavori</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="bottone2">Contattami</button>
+
+    <div class="prima_riga">
+        <img src="logo_telefono.svg" class="prima_immagine">
+        <div class="testo_prima_riga">
+            Mi occupo di sviluppo di siti web, web app e mobile app ma anche di configurazione e settaggio di sistemi informatici.
         </div>
     </div>
+</div>
 
-</div>
-<div class="introduzione_codice">
-    <pre class="codice" id="battitura"></pre>
-</div>
 
 <script src="index.js"></script>
 </body>
