@@ -51,6 +51,7 @@ li a:hover {
     cursor: pointer;
 }
 .introduzione_sinistra{
+    font-family: 'Roboto';
     height: 100vh;
     float: left;
     background: #0F1146;

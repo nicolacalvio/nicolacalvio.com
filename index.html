@@ -15,6 +15,39 @@
     <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js" integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous"></script>
 </head>
 <body>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Caveat|Righteous&display=swap');
+    /*div{
+        background:black;
+        width:100%;
+        height:100vh;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        flex-direction:column;
+    }*/
+    .nome{
+        font-family: 'Righteous', cursive;
+        background:url('https://media.giphy.com/media/FE0WTM8BG754I/giphy.gif') center center no-repeat;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size:7rem;
+        letter-spacing:10px;
+        background-size:cover;
+        margin:0px;
+        color:transparent;
+    }
+    .lavoro{
+        /*font-family: 'Caveat', cursive;*/
+        /*color:transparent;*/
+        font-size:1.5rem;
+        letter-spacing:5px;
+        margin:0px;
+        background:linear-gradient(to right, #c4c4c4 ,#6a6a6a);
+        -webkit-background-clip: text;
+
+    }
+</style>
 <div class="first" style="width: 100%">
     <div class="introduzione_sinistra">
         <header>
@@ -30,10 +63,10 @@
         <div class="spaziatore"></div>
         <div class="intestazione">
             <div class="nome">Nicola Calvio</div>
-            <div class="lavoro">Full stack software developer</div>
+            <center><div class="lavoro">Full-Stack software developer</div></center>
             <div style="height: 33px;"></div>
             <div class="bottoni">
-                <button class="bottone1">I miei lavori</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="bottone2">Contattami</button>
+                <a href="#seconda_pagina"><button class="bottone1">I miei lavori</button></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#contattami"><button class="bottone2">Contattami</button></a>
             </div>
         </div>
 
@@ -41,8 +74,8 @@
     <div class="introduzione_codice">
         <pre class="codice" id="battitura"></pre>
     </div>
-    <div class="scroll-down">
-        <a href="#seconda_pagina"> <img src="scroll.svg" alt=""></a>
+    <div class="scroll-down" style="transform: rotate(-90deg);">
+        <a href="#seconda_pagina"> <img src="scroll.svg"  alt=""></a>
     </div>
 </div>
 <div class="spaziatore" >&nbsp;</div>
@@ -119,7 +152,7 @@
         }
 
         #drag-container p {
-            font-family: Serif;
+            /*font-family: Serif;*/
             position: absolute;
             top: 100%;
             left: 50%;
@@ -197,11 +230,17 @@
             <img class="comingsoon" src="https://www.nicolacalvio.com/wp-content/uploads/2022/10/immagine_bianca-2.png" alt="" style="cursor: pointer;">
 
             <!-- Text at center of ground -->
-            <p>My Portfolio</p>
+            <p></p>
         </div>
         <div id="ground"></div>
+
     </div>
-    </style>
+    <div class="" style="transform: rotate(-90deg); position: absolute; color: #FFFFFF; cursor: pointer; right: 40%; top: 170%">
+        <a href="#contattami"> <img src="scroll.svg"  alt=""></a>
+    </div>
+    <div class="" style="transform: rotate(90deg); position: absolute; color: #FFFFFF; cursor: pointer; left: 40%; top: 170%">
+        <a href="#"> <img src="scroll.svg"  alt=""></a>
+    </div>
 
     <script>
         // Author: Hoang Tran (https://www.facebook.com/profile.php?id=100004848287494)
@@ -348,7 +387,169 @@
     </script>
 </div>
 <div class="spaziatore" >&nbsp;</div>
-<div class="third" id="contattami">
+<div class="third" id="contattami" style="width: 100%">
+    <style>
+
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: none;
+        }
+
+        * {
+            /*font-family: Rubik,sans-serif*/
+        }
+
+        *,:after,:before {
+            box-sizing: border-box
+        }
+
+        @media screen and (max-width: 768px) {
+            html {
+                font-size:15px
+            }
+        }
+
+        @media screen and (max-width: 465px) {
+            html {
+                font-size:14px
+            }
+        }
+
+        body {
+            overflow: hidden;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            /*display: flex;*/
+            background: #202020;
+
+            -webkit-perspective: 1000px;
+            perspective: 1000px;
+            -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+        }
+
+
+        .contact{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 100vw;
+            min-height: 100vh;
+            background: linear-gradient(180deg, #202020 0%, rgba(32, 32, 32, 0.2) 50%, #202020 100%), url(https://images.unsplash.com/photo-1567359781514-3b964e2b04d6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1468&q=80);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .contact-title{
+            color: #CCCCCC;
+            font-size: 2.5rem;
+        }
+
+        .contact-form{
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+            gap: 1rem;
+            border: 1px solid #602DFF;
+            border-radius: 1rem;
+            background: #252525;
+            max-width: 375px;
+            width: 100%;
+        }
+
+        label{
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+            color: #ccc;
+        }
+
+        label input, label textarea{
+            background: #202020;
+            padding: .75rem;
+            font-size: 1rem;
+            border-radius: .5rem;
+            color: #e5e5e5;
+            border: 1px solid transparent;
+            transition: all .25s ease 0s
+
+        }
+
+        label textarea{
+            max-width: 100%;
+            max-height: 200px;
+            min-width: 200px;
+            min-height: 100px;
+        }
+
+        .send-btn{
+            background: linear-gradient(90deg, #602DFF 0%, #170055 100%);
+            padding: .75rem;
+            font-size: 1rem;
+            font-weight: 600;
+            color: #CCC;
+            border-radius: .5rem;
+            cursor: pointer;
+        }
+
+        label input:hover,
+        label textarea:hover,
+        label input:focus,
+        label textarea:focus{
+            border-color: #602DFF;
+            box-shadow: 0 0 0 3px #602DFF80;
+        }
+
+        .send-btn:hover, .send-btn:focus{
+            background: linear-gradient(90deg, #602DFF 75%, #170055 100%);
+        }
+
+        @media screen and (max-width: 900px){
+            .contact{
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .contact-title{
+                text-align: center;
+            }
+        }
+    </style>
+
+    <div class="contact" >
+        <div style="display: none;">
+            <h2 class="contact-title">
+                Do you have a project?</br>
+                I would love to help.
+            </h2>
+            <div class="contact-form">
+                <label for="name">
+      <span class="input-name">
+        Name:
+      </span>
+                    <input type="text" name="name" id="name" class="name">
+                </label>
+                <label for="email">
+      <span class="input-name">
+        Email address:
+      </span>
+                    <input type="text" name="email" id="email" class="email">
+                </label>
+                <label for="project-info">
+      <span class="input-name">
+        Tell about your project:
+      </span>
+                    <textarea name="project-info" id="project-info" class="project-info"></textarea>
+                </label>
+                <button class="btn send-btn">
+                    Send
+                </button>
+            </div>
+        </div>
+        </div>
 
 </div>
 
