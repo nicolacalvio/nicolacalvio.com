@@ -205,3 +205,12 @@ pre {
 .prima_immagine{
     float: left;
 }
+.second{
+    /*margin-top: 100vh;*/
+}
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+
+}
