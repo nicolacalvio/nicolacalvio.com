@@ -125,4 +125,16 @@ code.split('\n').forEach(line => {
     container.innerHTML += highlightedLine + '\n';
     lineNumber++;
 });
+document.querySelectorAll('.portfolio_link').forEach(link => {
+    link.addEventListener('click', () => {
+        document.querySelector('.contact').style.display = "none";
+        document.querySelector('.portfolio').style.display = "";
+    });
+});
+document.querySelectorAll('.contattami_link').forEach(link => {
+    link.addEventListener('click', () => {
+        document.querySelector('.contact').style.display = "";
+        document.querySelector('.portfolio').style.display = "none";
+    });
+});
 applyTypingEffect(container.innerHTML, 'battitura');

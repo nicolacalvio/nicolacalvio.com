@@ -17,15 +17,6 @@
 <body>
 <style>
     @import url('https://fonts.googleapis.com/css?family=Caveat|Righteous&display=swap');
-    /*div{
-        background:black;
-        width:100%;
-        height:100vh;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-        flex-direction:column;
-    }*/
     .nome{
         font-family: 'Righteous', cursive;
         background:url('https://media.giphy.com/media/FE0WTM8BG754I/giphy.gif') center center no-repeat;
@@ -55,8 +46,8 @@
                 <li class="home"><a href="#"><img src="logo_header.svg" alt="logo"></a></li>
                 <li><a href="#">Home</a></li>
                 <!--<li><a href="#">Chi sono</a></li>-->
-                <li><a href="#seconda_pagina">Portfolio</a></li>
-                <li><a href="#contattami">Contattami</a></li>
+                <li><a href="#contattami" class="portfolio_link">Portfolio</a></li>
+                <li><a href="#contattami" class="contattami_link">Contattami</a></li>
             </ul>
 
         </header>
@@ -66,7 +57,7 @@
             <center><div class="lavoro">Full-Stack software developer</div></center>
             <div style="height: 33px;"></div>
             <div class="bottoni">
-                <a href="#seconda_pagina"><button class="bottone1">I miei lavori</button></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#contattami"><button class="bottone2">Contattami</button></a>
+                <a href="#contattami"><button class="bottone1 portfolio_link">I miei lavori</button></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#contattami"><button class="bottone2 contattami_link">Contattami</button></a>
             </div>
         </div>
 
@@ -74,154 +65,12 @@
     <div class="introduzione_codice">
         <pre class="codice" id="battitura"></pre>
     </div>
-    <div class="scroll-down" style="transform: rotate(-90deg);">
-        <a href="#seconda_pagina"> <img src="scroll.svg"  alt=""></a>
-    </div>
 </div>
 <div class="spaziatore" >&nbsp;</div>
-<!--<div class="second" id="seconda_pagina">
-    <div class="immagine_laterale">
-        <img src="laterale.svg">
-    </div>
-    <div class="titolo" >
-        CHI SONO
-    </div>
-    <div class="spaziatore"></div>
-
-    <div class="prima_riga">
-        <img src="logo_telefono.svg" class="prima_immagine">
-        <div class="testo_prima_riga">
-            Mi occupo di sviluppo di siti web, web app e mobile app ma anche di configurazione e settaggio di sistemi informatici.
-        </div>
-    </div>
-</div>-->
-
-<div class="second vertical-center" id="seconda_pagina" style="width: 100%; flex: 1;">
-    <style>
-
-
-        body {
-            overflow: hidden;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            /*display: flex;*/
-            background: #111;
-            -webkit-perspective: 1000px;
-            perspective: 1000px;
-            -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d;
-        }
-
-        #drag-container,
-        #spin-container {
-            position: relative;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            margin: auto;
-            -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d;
-            -webkit-transform: rotateX(-10deg);
-            transform: rotateX(-10deg);
-        }
-
-        #drag-container img,
-        #drag-container video {
-            -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d;
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            line-height: 200px;
-            font-size: 50px;
-            text-align: center;
-            -webkit-box-shadow: 0 0 8px #fff;
-            box-shadow: 0 0 8px #fff;
-            -webkit-box-reflect: below 10px
-            linear-gradient(transparent, transparent, #0005);
-        }
-
-        #drag-container img:hover,
-        #drag-container video:hover {
-            -webkit-box-shadow: 0 0 15px #fffd;
-            box-shadow: 0 0 15px #fffd;
-            -webkit-box-reflect: below 10px
-            linear-gradient(transparent, transparent, #0007);
-        }
-
-        #drag-container p {
-            /*font-family: Serif;*/
-            position: absolute;
-            top: 100%;
-            left: 50%;
-            -webkit-transform: translate(-50%, -50%) rotateX(90deg);
-            transform: translate(-50%, -50%) rotateX(90deg);
-            color: #fff;
-        }
-
-        #ground {
-            width: 900px;
-            height: 900px;
-            position: absolute;
-            top: 100%;
-            left: 50%;
-            -webkit-transform: translate(-50%, -50%) rotateX(90deg);
-            transform: translate(-50%, -50%) rotateX(90deg);
-            background: -webkit-radial-gradient(
-                    center center,
-                    farthest-side,
-                    #9993,
-                    transparent
-            );
-        }
-
-        @-webkit-keyframes spin {
-            from {
-                -webkit-transform: rotateY(0deg);
-                transform: rotateY(0deg);
-            }
-            to {
-                -webkit-transform: rotateY(360deg);
-                transform: rotateY(360deg);
-            }
-        }
-
-        @keyframes spin {
-            from {
-                -webkit-transform: rotateY(0deg);
-                transform: rotateY(0deg);
-            }
-            to {
-                -webkit-transform: rotateY(360deg);
-                transform: rotateY(360deg);
-            }
-        }
-        @-webkit-keyframes spinRevert {
-            from {
-                -webkit-transform: rotateY(360deg);
-                transform: rotateY(360deg);
-            }
-            to {
-                -webkit-transform: rotateY(0deg);
-                transform: rotateY(0deg);
-            }
-        }
-        @keyframes spinRevert {
-            from {
-                -webkit-transform: rotateY(360deg);
-                transform: rotateY(360deg);
-            }
-            to {
-                -webkit-transform: rotateY(0deg);
-                transform: rotateY(0deg);
-            }
-        }
-    </style>
+<!--<div class="second vertical-center" id="seconda_pagina" style="width: 100%; flex: 1;">
     <div id="drag-container">
         <div id="spin-container">
-            <!--<h1>My Portfolio</h1>-->
+            &lt;!&ndash;<h1>My Portfolio</h1>&ndash;&gt;
             <img class="comingsoon" src="https://www.nicolacalvio.com/wp-content/uploads/2022/10/immagine_bianca-2.png" alt="" style="cursor: pointer;">
             <img class="comingsoon" src="https://www.nicolacalvio.com/wp-content/uploads/2022/10/immagine_bianca-2.png" alt="" style="cursor: pointer;">
             <img id="gioaledo" src="https://www.nicolacalvio.com/wp-content/uploads/2022/10/gioaledo.png" alt="" style="cursor: pointer;">
@@ -229,297 +78,18 @@
             <img id="venisia" src="https://www.nicolacalvio.com/wp-content/uploads/2022/10/Schermata-del-2022-10-19-19-02-15.png" alt="" style="cursor: pointer;">
             <img class="comingsoon" src="https://www.nicolacalvio.com/wp-content/uploads/2022/10/immagine_bianca-2.png" alt="" style="cursor: pointer;">
 
-            <!-- Text at center of ground -->
+            &lt;!&ndash; Text at center of ground &ndash;&gt;
             <p></p>
         </div>
         <div id="ground"></div>
 
     </div>
-    <div class="" style="transform: rotate(-90deg); position: absolute; color: #FFFFFF; cursor: pointer; right: 40%; top: 170%">
-        <a href="#contattami"> <img src="scroll.svg"  alt=""></a>
-    </div>
-    <div class="" style="transform: rotate(90deg); position: absolute; color: #FFFFFF; cursor: pointer; left: 40%; top: 170%">
-        <a href="#"> <img src="scroll.svg"  alt=""></a>
-    </div>
 
-    <script>
-        // Author: Hoang Tran (https://www.facebook.com/profile.php?id=100004848287494)
-        // Github verson (1 file .html): https://github.com/HoangTran0410/3DCarousel/blob/master/index.html
-
-        // You can change global variables here:
-        var radius = 240; // how big of the radius
-        var autoRotate = true; // auto rotate or not
-        var rotateSpeed = -60; // unit: seconds/360 degrees
-        var imgWidth = 120; // width of images (unit: px)
-        var imgHeight = 170; // height of images (unit: px)
-
-        // Link of background music - set 'null' if you dont want to play background music
-        var bgMusicURL =
-            "https://api.soundcloud.com/tracks/143041228/stream?client_id=587aa2d384f7333a886010d5f52f302a";
-        var bgMusicControls = true; // Show UI music control
-
-        /*
-       NOTE:
-         + imgWidth, imgHeight will work for video
-         + if imgWidth, imgHeight too small, play/pause button in <video> will be hidden
-         + Music link are taken from: https://hoangtran0410.github.io/Visualyze-design-your-own-/?theme=HauMaster&playlist=1&song=1&background=28
-         + Custom from code in tiktok video  https://www.facebook.com/J2TEAM.ManhTuan/videos/1353367338135935/
-  */
-
-        // ===================== start =======================
-        setTimeout(init, 100);
-
-        var odrag = document.getElementById("drag-container");
-        var ospin = document.getElementById("spin-container");
-        var aImg = ospin.getElementsByTagName("img");
-        var aVid = ospin.getElementsByTagName("video");
-        var aEle = [...aImg, ...aVid]; // combine 2 arrays
-
-        // Size of images
-        ospin.style.width = imgWidth + "px";
-        ospin.style.height = imgHeight + "px";
-
-        // Size of ground - depend on radius
-        var ground = document.getElementById("ground");
-        ground.style.width = radius * 3 + "px";
-        ground.style.height = radius * 3 + "px";
-
-        function init(delayTime) {
-            for (var i = 0; i < aEle.length; i++) {
-                aEle[i].style.transform =
-                    "rotateY(" +
-                    i * (360 / aEle.length) +
-                    "deg) translateZ(" +
-                    radius +
-                    "px)";
-                aEle[i].style.transition = "transform 1s";
-                aEle[i].style.transitionDelay =
-                    delayTime || (aEle.length - i) / 4 + "s";
-            }
-        }
-
-        function applyTranform(obj) {
-            // Constrain the angle of camera (between 0 and 180)
-            if (tY > 180) tY = 180;
-            if (tY < 0) tY = 0;
-
-            // Apply the angle
-            obj.style.transform = "rotateX(" + -tY + "deg) rotateY(" + tX + "deg)";
-        }
-
-        function playSpin(yes) {
-            ospin.style.animationPlayState = yes ? "running" : "paused";
-        }
-
-        var sX,
-            sY,
-            nX,
-            nY,
-            desX = 0,
-            desY = 0,
-            tX = 0,
-            tY = 10;
-
-        // auto spin
-        if (autoRotate) {
-            var animationName = rotateSpeed > 0 ? "spin" : "spinRevert";
-            ospin.style.animation = `${animationName} ${Math.abs(
-                rotateSpeed
-            )}s infinite linear`;
-        }
-
-        // setup events
-        document.onpointerdown = function(e) {
-            clearInterval(odrag.timer);
-            e = e || window.event;
-            var sX = e.clientX,
-                sY = e.clientY;
-
-            this.onpointermove = function(e) {
-                e = e || window.event;
-                var nX = e.clientX,
-                    nY = e.clientY;
-                desX = nX - sX;
-                desY = nY - sY;
-                tX += desX * 0.1;
-                tY += desY * 0.1;
-                applyTranform(odrag);
-                sX = nX;
-                sY = nY;
-            };
-
-            this.onpointerup = function(e) {
-                odrag.timer = setInterval(function() {
-                    desX *= 0.95;
-                    desY *= 0.95;
-                    tX += desX * 0.1;
-                    tY += desY * 0.1;
-                    applyTranform(odrag);
-                    playSpin(false);
-                    if (Math.abs(desX) < 0.5 && Math.abs(desY) < 0.5) {
-                        clearInterval(odrag.timer);
-                        playSpin(true);
-                    }
-                }, 17);
-                this.onpointermove = this.onpointerup = null;
-            };
-
-            return false;
-        };
-
-        document.querySelector("#gioaledo").addEventListener("click", ()=>{
-            document.querySelector('.descrizione > div > p').innerHTML = "gioaledo.com è un sito e-commerce con base wordpress e con il plugin woocommerce che rende facile la gestione del negozio online, si presenta leggero facile e intuitivo.";
-        })
-
-        document.querySelector("#coffee").addEventListener("click", ()=>{
-            document.querySelector('.descrizione > div > p').innerHTML = "coffeelounge.delonghi.com è un portale ed un sito ecommerce che vende e presenta caffè oltre ad avere molti contenuti quali ricette e articoli relativi al caffè presente in oltre 9 stati";
-        })
-
-        document.querySelector("#venisia").addEventListener("click", ()=>{
-            document.querySelector('.descrizione > div > p').innerHTML = "VeniSIA è un acceleratore di innovazione sulla sostenibilità, il sito presenta il progetto";
-        })
-
-        document.querySelectorAll(".comingsoon").forEach((el)=>{
-            el.addEventListener("click", ()=>{
-                document.querySelector('.descrizione > div > p').innerHTML = "Nuovo progetto in arrivo!";
-            })
-        })
-    </script>
-</div>
+    <script src="spinner.js"></script>
+</div>-->
 <div class="spaziatore" >&nbsp;</div>
 <div class="third" id="contattami" style="width: 100%">
-    <style>
-
-        *{
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            border: 0;
-            outline: none;
-        }
-
-        * {
-            /*font-family: Rubik,sans-serif*/
-        }
-
-        *,:after,:before {
-            box-sizing: border-box
-        }
-
-        @media screen and (max-width: 768px) {
-            html {
-                font-size:15px
-            }
-        }
-
-        @media screen and (max-width: 465px) {
-            html {
-                font-size:14px
-            }
-        }
-
-        body {
-            overflow: hidden;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            /*display: flex;*/
-            background: #202020;
-
-            -webkit-perspective: 1000px;
-            perspective: 1000px;
-            -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d;
-        }
-
-
-        .contact{
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            width: 100vw;
-            min-height: 100vh;
-            background: linear-gradient(180deg, #202020 0%, rgba(32, 32, 32, 0.2) 50%, #202020 100%), url(https://images.unsplash.com/photo-1567359781514-3b964e2b04d6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1468&q=80);
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-
-        .contact-title{
-            color: #CCCCCC;
-            font-size: 2.5rem;
-        }
-
-        .contact-form{
-            display: flex;
-            flex-direction: column;
-            padding: 1rem;
-            gap: 1rem;
-            border: 1px solid #602DFF;
-            border-radius: 1rem;
-            background: #252525;
-            max-width: 375px;
-            width: 100%;
-        }
-
-        label{
-            display: flex;
-            flex-direction: column;
-            gap: .5rem;
-            color: #ccc;
-        }
-
-        label input, label textarea{
-            background: #202020;
-            padding: .75rem;
-            font-size: 1rem;
-            border-radius: .5rem;
-            color: #e5e5e5;
-            border: 1px solid transparent;
-            transition: all .25s ease 0s
-
-        }
-
-        label textarea{
-            max-width: 100%;
-            max-height: 200px;
-            min-width: 200px;
-            min-height: 100px;
-        }
-
-        .send-btn{
-            background: linear-gradient(90deg, #602DFF 0%, #170055 100%);
-            padding: .75rem;
-            font-size: 1rem;
-            font-weight: 600;
-            color: #CCC;
-            border-radius: .5rem;
-            cursor: pointer;
-        }
-
-        label input:hover,
-        label textarea:hover,
-        label input:focus,
-        label textarea:focus{
-            border-color: #602DFF;
-            box-shadow: 0 0 0 3px #602DFF80;
-        }
-
-        .send-btn:hover, .send-btn:focus{
-            background: linear-gradient(90deg, #602DFF 75%, #170055 100%);
-        }
-
-        @media screen and (max-width: 900px){
-            .contact{
-                flex-direction: column;
-                gap: 1rem;
-            }
-            .contact-title{
-                text-align: center;
-            }
-        }
-    </style>
-
-    <div class="contact" >
+    <div class="contact" style="display: none">
         <div style="">
             <h2 class="contact-title">
                 Do you have a project?</br>
@@ -549,7 +119,28 @@
                 </button>
             </div>
         </div>
+    </div>
+    <div class="portfolio" style="display: none; padding: 25% 0;">
+        <div id="drag-container">
+            <div id="spin-container">
+                <!--&lt;!&ndash;<h1>My Portfolio</h1>&ndash;&gt;-->
+                <img class="comingsoon" src="https://www.nicolacalvio.com/wp-content/uploads/2022/10/immagine_bianca-2.png" alt="" style="cursor: pointer;">
+                <img class="comingsoon" src="https://www.nicolacalvio.com/wp-content/uploads/2022/10/immagine_bianca-2.png" alt="" style="cursor: pointer;">
+                <img id="gioaledo" src="https://www.nicolacalvio.com/wp-content/uploads/2022/10/gioaledo.png" alt="" style="cursor: pointer;">
+                <img id="coffee" src="https://www.nicolacalvio.com/wp-content/uploads/2022/10/Schermata-del-2022-10-19-18-53-47.png" alt="" style="cursor: pointer;">
+                <img id="venisia" src="https://www.nicolacalvio.com/wp-content/uploads/2022/10/Schermata-del-2022-10-19-19-02-15.png" alt="" style="cursor: pointer;">
+                <img class="comingsoon" src="https://www.nicolacalvio.com/wp-content/uploads/2022/10/immagine_bianca-2.png" alt="" style="cursor: pointer;">
+
+                <p></p>
+            </div>
+            <div id="ground"></div>
+
         </div>
+
+        <script src="spinner.js"></script>
+    </div>
+
+
 
 </div>
 
