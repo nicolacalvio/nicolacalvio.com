@@ -122,7 +122,7 @@
         return false;
     };
 
-    document.querySelector("#gioaledo").addEventListener("click", ()=>{
+   /* document.querySelector("#gioaledo").addEventListener("click", ()=>{
         document.querySelector('.descrizione > div > p').innerHTML = "gioaledo.com è un sito e-commerce con base wordpress e con il plugin woocommerce che rende facile la gestione del negozio online, si presenta leggero facile e intuitivo.";
     })
 
@@ -138,4 +138,4 @@
         el.addEventListener("click", ()=>{
             document.querySelector('.descrizione > div > p').innerHTML = "Nuovo progetto in arrivo!";
         })
-    })
+    })*/

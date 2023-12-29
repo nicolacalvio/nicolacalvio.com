@@ -6,7 +6,21 @@ document.querySelector(".send-btn").addEventListener("click", () => {
     if (name === "" || email === "" || message === "") {
         alert("Please fill all the fields");
     } else {
-
+        //send email via send_email.php
+        const xhr = new XMLHttpRequest();
+        xhr.open("POST", "send_email.php", true);
+        xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        xhr.onload = function () {
+            if (this.status === 200) {
+                alert("Email sent successfully");
+                document.querySelector("#name").value = "";
+                document.querySelector("#email").value = "";
+                document.querySelector("#project-info").value = "";
+            } else {
+                alert("Something went wrong");
+            }
+        }
+        xhr.send(`name=${name}&email=${email}&message=${message}`);
     }
 });
 
