@@ -463,3 +463,8 @@ label textarea:focus{
         text-align: center;
     }
 }
+
+.spin-card{
+    cursor: pointer;
+    z-index: 50;
+}

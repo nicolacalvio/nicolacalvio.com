@@ -1,3 +1,34 @@
+document.querySelector(".send-btn").addEventListener("click", () => {
+    const name = document.querySelector("#name").value;
+    const email = document.querySelector("#email").value;
+    const message = document.querySelector("#project-info").value;
+
+    if (name === "" || email === "" || message === "") {
+        alert("Please fill all the fields");
+    } else {
+
+    }
+});
+
+
+function checkScreenResolution() {
+    var width = screen.width;
+    var height = screen.height;
+
+    if (width >= 1500 && height >= 800) {
+        console.log("Screen resolution is equal to or greater than 1920x1080.");
+    } else {
+        alert("This site is still under construction and may not work correctly on your screen resolution.");
+    }
+}
+
+// Run the function to check screen resolution
+checkScreenResolution();
+
+document.querySelector("#go-back-arrow").addEventListener("click", ()=>{
+    window.history.back();
+});
+
 function applyTypingEffect(htmlContent, containerId) {
     const container = document.querySelector(`#${containerId}`);
     container.innerHTML = "";
